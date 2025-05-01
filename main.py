@@ -3,16 +3,12 @@ import sqlite3
 import time
 from telebot import types
 #2.136 строка!!!!!!!
-TOKEN='6586958515:AAG4L1PLFPYecNGcshqOrTJJVsg_OYqb5Ds'
 a,b,c,d,e,f,g,otv,gor,po,rsa = str(),str(),str(),str(),str(),str(),str(),str(),str(),str(),str()
 i = 0
 ank = []
 op = 1
 ttt = ('М','Ж')
 ss = 0
-connection = sqlite3.connect('ZnakAlpha.db',check_same_thread=False)
-cursor = connection.cursor()
-bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(content_types=['text'])
 def gettext(message):
     if message.text=='/start':
